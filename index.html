@@ -2,41 +2,33 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sensor Simulado MQTT</title>
+  <title>Monitor MQTT</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>🌡️ Temperatura</h1>
 
-  <h1>🌡️ Sensor de Temperatura (Simulado)</h1>
+  
+  
+    <input id="user" placeholder="Usuário">
+    <input id="pass" type="password" placeholder="Senha">
+    <button onclick="conectar()">Conectar</button>
+  
 
+
+
+  
   
     Conectando...
 
 
-    — °C
+    -- °C
 
 
-    Aguardando dados
-
-
+    <button onclick="enviar()">Enviar 25°C</button>
   
 
 
-
-  
-    <button id="btnStart">▶ Iniciar sensor</button>
-    <button id="btnStop">⏸ Parar sensor</button>
-    <label>
-      Intervalo (ms)
-      <input type="range" id="interval" min="500" max="5000" step="500" value="2000">
-      2000
-    </label>
-  
-
-
-
-  <canvas id="chart" width="800" height="300"></canvas>
 
   <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
   <script src="app.js"></script>
