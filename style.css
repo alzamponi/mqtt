@@ -1,55 +1,6 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 40px auto;
-  max-width: 860px;
-  color: #222;
-}
-
-.panel { margin-bottom: 20px; }
-
-.status {
-  display: inline-block;
-  padding: 8px 18px;
-  border-radius: 20px;
-  background: #eee;
-  color: #333;
-}
-.status.online  { background: #c8e6c9; color: #1b5e20; }
-.status.offline { background: #ffcdd2; color: #b71c1c; }
-
-.value {
-  font-size: 72px;
-  font-weight: bold;
-  color: #1565c0;
-  margin: 10px 0;
-}
-
-.meta { color: #666; font-size: 14px; }
-
-.controls {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 12px 22px;
-  font-size: 15px;
-  border: none;
-  border-radius: 8px;
-  background: #1565c0;
-  color: #fff;
-  cursor: pointer;
-}
-button:hover { background: #0d47a1; }
-
-#chart {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #fafafa;
-  max-width: 100%;
-}
+body { font-family: Arial; text-align: center; margin-top: 50px; }
+#login { margin-bottom: 30px; }
+input { padding: 10px; margin: 0 5px; font-size: 15px; }
+button { padding: 12px 24px; font-size: 16px; cursor: pointer; }
+#status { color: gray; }
+#temp { font-size: 60px; font-weight: bold; color: #1565c0; }
